@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: OpensSans, sans-serif;
+}
+
+.container__tela__login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #EAF2FD;
+    padding: 45px;
+    border-radius: 4%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #25577a;
+}
+
+.label_float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    min-width: 230px;
+    min-height: 30px;
+    transition: all .3s ease-out;
+}
+
+.label_float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.label_float input:focus {
+    border-bottom: 2px solid var(--azul-destaque)
+}
+
+.label_float label {
+    font-size: 9px;
+    color: var(--preto-destaque);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    margin-top: 6px;
+    transition: all .5s;
+}
+
+.label_float input:focus+label {
+    font-size: 8px;
+    color: var(--azul-destaque);
+}
+
+.botao__login #botao__logo {
+    background: var(--azul-destaque);
+    color: var( --texto-destaque);
+    border-radius: 6px;
+    width: 280px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
